@@ -94,22 +94,8 @@ void app_main(void)
     }
 }*/
 
-#include <stdio.h>
-
-#include "freertos/FreeRTOS.h"
-#include "freertos/task.h"
-
-#include "driver/gpio.h"
-#include "driver/ledc.h"
-
-#define NUM_COLOURS 4
-
-#define BUTTON_BLUE       GPIO_NUM_27
-#define BUTTON_GREEN      GPIO_NUM_26
-#define BUTTON_YELLOW     GPIO_NUM_25
-#define BUTTON_RED        GPIO_NUM_32
-
-#define BUZZER         GPIO_NUM_33
+#include "board/board.h"
+#include "games/simon_says.h"
 
 void app_main(void)
 {

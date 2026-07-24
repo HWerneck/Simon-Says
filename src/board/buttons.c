@@ -11,7 +11,7 @@ static const gpio_num_t BUTTON_PINS[COLOUR_COUNT] =
     GPIO_NUM_32  // RED
 };
 
-void buttons_init(void)
+void button_init(void)
 {
     uint64_t pin_mask = 0;
     for (Colour colour_iterator = COLOUR_BLUE; colour_iterator < COLOUR_COUNT; colour_iterator++)

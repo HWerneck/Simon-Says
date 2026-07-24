@@ -4,7 +4,7 @@
 #include <stdbool.h>
 #include "common/colour.h"
 
-void leds_init(void);
+void led_init(void);
 void led_on(Colour colour);
 void led_off(Colour colour);
 void led_toggle(Colour colour);

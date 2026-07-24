@@ -10,7 +10,7 @@ static const gpio_num_t LED_PINS[COLOUR_COUNT] =
     GPIO_NUM_19  // RED
 };
 
-void leds_init(void)
+void led_init(void)
 {
     uint64_t pin_mask = 0;
     for (Colour colour_iterator = COLOUR_BLUE; colour_iterator < COLOUR_COUNT; colour_iterator++)
